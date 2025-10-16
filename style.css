@@ -47,11 +47,13 @@ header {
     color: #FF0000;
     font-size: 2.5em;
     border-right: 0.15em solid #FF4500;
-    white-space: nowrap;
+    white-space: normal; /* Allow text to wrap if needed */
     overflow: hidden;
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; /* Increased steps for smoother effect */
     display: inline-block;
-    max-width: 100%;
+    max-width: 90%; /* Prevent overflow on small screens */
+    margin: 0 auto; /* Center the text */
+    line-height: 1.2; /* Improve vertical alignment */
 }
 
 @keyframes typing {
@@ -275,8 +277,10 @@ footer {
     .hero { padding: 50px 10px; }
     nav ul { flex-direction: row; gap: 15px; flex-wrap: wrap; justify-content: center; }
     .typing {
-        font-size: 1.5em;
+        font-size: 1.3em; /* Slightly smaller for mobile */
         white-space: normal;
+        animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; /* Consistent timing */
+        max-width: 85%; /* Adjusted for better fit */
     }
     .section { padding: 40px 10px; }
     .feature-grid, .team-grid, .gallery-grid {
