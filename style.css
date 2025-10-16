@@ -6,6 +6,10 @@ body {
     padding: 0;
     overflow-x: hidden;
     animation: gradientShift 10s ease infinite;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 @keyframes gradientShift {
@@ -45,6 +49,10 @@ header {
     transition: transform 0.5s ease;
     border-radius: 15px; /* Curved edges on all sides */
     outline: 2px solid #FF0000; /* Added red stroke */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 .logo:hover {
@@ -63,6 +71,10 @@ header {
     max-width: 90%;
     margin: 0 auto;
     line-height: 1.2;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 @keyframes typing {
@@ -95,6 +107,10 @@ nav a {
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s ease;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 nav a:hover {
@@ -106,12 +122,20 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 h2, h3 {
     font-family: 'Press Start 2P', cursive;
     color: #FF0000;
     text-shadow: 2px 2px 4px #000;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 .feature-grid {
@@ -129,6 +153,10 @@ h2, h3 {
     text-align: center;
     transition: transform 0.3s ease;
     max-width: 300px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 .feature-card:hover {
@@ -138,6 +166,10 @@ h2, h3 {
 .details {
     font-size: 0.9em;
     color: #DDD;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 .team-grid {
@@ -153,6 +185,10 @@ h2, h3 {
     border-radius: 10px;
     transition: transform 0.3s ease;
     max-width: 250px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 .team-card:hover {
@@ -164,6 +200,10 @@ ul {
     padding: 0;
     max-width: 600px;
     margin: 0 auto;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 ul li {
@@ -172,6 +212,10 @@ ul li {
     margin: 10px 0;
     border-radius: 5px;
     transition: background 0.3s ease;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 ul li:hover {
@@ -188,6 +232,10 @@ ul li:hover {
     transition: background 0.3s ease, transform 0.3s ease;
     font-family: 'Press Start 2P', cursive;
     font-size: 1em;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 .join-btn:hover {
@@ -210,6 +258,10 @@ ul li:hover {
     max-width: 300px;
     aspect-ratio: 16 / 9;
     object-fit: cover;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 .gallery-grid img:hover {
@@ -227,12 +279,20 @@ ul li:hover {
     justify-content: center;
     align-items: center;
     z-index: 2000;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 .lightbox img {
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 footer {
@@ -240,12 +300,20 @@ footer {
     padding: 20px;
     background: #000;
     font-size: 0.9em;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 .reveal {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease, transform 0.8s ease;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard */
 }
 
 .reveal.visible {
@@ -290,6 +358,10 @@ footer {
         white-space: normal;
         animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
         max-width: 85%;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE/Edge */
+        user-select: none; /* Standard */
     }
     .section { padding: 40px 10px; }
     .feature-grid, .team-grid, .gallery-grid {
@@ -304,25 +376,45 @@ footer {
         max-width: clamp(150px, 40vw, 180px);
         min-height: clamp(180px, 50vw, 200px);
         padding: 10px;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE/Edge */
+        user-select: none; /* Standard */
     }
     .team-card {
         min-width: clamp(150px, 40vw, 180px);
         max-width: clamp(150px, 40vw, 180px);
         min-height: clamp(150px, 45vw, 180px);
         padding: 10px;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE/Edge */
+        user-select: none; /* Standard */
     }
     .gallery-grid img {
         min-width: clamp(150px, 40vw, 180px);
         max-width: clamp(150px, 40vw, 180px);
         aspect-ratio: 16 / 9;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE/Edge */
+        user-select: none; /* Standard */
     }
     ul {
         text-align: left;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE/Edge */
+        user-select: none; /* Standard */
     }
     .logo {
         max-width: 12%; /* Increased to 12% for a little more size on mobile */
         min-width: 50px; /* Increased minimum width */
         border-radius: 15px; /* Maintain curved edges */
         outline: 2px solid #FF0000; /* Added red stroke */
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE/Edge */
+        user-select: none; /* Standard */
     }
-}
+    }
