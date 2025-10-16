@@ -37,9 +37,10 @@ header {
 }
 
 .logo {
-    max-width: 40%; /* Responsive width */
+    max-width: 20%; /* Reduced from 40% to make it smaller */
+    min-width: 100px; /* Minimum width to prevent it from getting too small */
     height: auto;
-    margin-bottom: 20px; /* Space between logo and text */
+    margin-bottom: 20px;
     transition: transform 0.5s ease;
 }
 
@@ -50,7 +51,7 @@ header {
 .typing {
     font-family: 'Press Start 2P', cursive;
     color: #FF0000;
-    font-size: clamp(1.5em, 4vw, 2.5em); /* Responsive font size */
+    font-size: clamp(1.5em, 4vw, 2.5em);
     border-right: 0.15em solid #FF4500;
     white-space: normal;
     overflow: hidden;
@@ -283,13 +284,13 @@ footer {
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
     .hero { padding: clamp(50px, 8vw, 100px) clamp(10px, 2vw, 20px) clamp(20px, 4vw, 50px); }
-    .logo { max-width: 50%; }
+    .logo { max-width: 25%; min-width: 80px; }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(150px, 18vw, 200px), 1fr)); }
 }
 
 @media (max-width: 768px) {
     .hero { padding: clamp(30px, 6vw, 50px) clamp(5px, 1.5vw, 10px) clamp(10px, 2vw, 20px); }
-    .logo { max-width: 60%; }
+    .logo { max-width: 30%; min-width: 70px; }
     .typing { font-size: clamp(1em, 3vw, 1.3em); max-width: 85%; }
     .nav ul { flex-direction: row; gap: clamp(5px, 1.5vw, 15px); flex-wrap: wrap; }
     .section { padding: clamp(20px, 4vw, 40px) clamp(5px, 1vw, 10px); }
@@ -301,11 +302,11 @@ footer {
 
 @media (max-width: 480px) {
     .hero { padding: clamp(20px, 5vw, 30px) clamp(5px, 1vw, 10px) clamp(5px, 1.5vw, 10px); }
-    .logo { max-width: 70%; }
+    .logo { max-width: 40%; min-width: 60px; }
     .typing { font-size: clamp(0.8em, 2.5vw, 1em); }
     .nav ul { gap: clamp(5px, 1vw, 10px); }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(100px, 12vw, 150px), 1fr)); }
     .feature-card, .team-card { min-height: clamp(150px, 20vw, 180px); }
     .gallery-grid img { min-width: clamp(100px, 12vw, 150px); }
     .join-btn { padding: clamp(8px, 1.5vw, 10px) clamp(15px, 3vw, 20px); }
-}
+               }
