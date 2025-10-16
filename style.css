@@ -31,12 +31,16 @@ header {
     padding: 100px 20px;
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 4px 20px rgba(255, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo {
-    max-width: 2%; /* Reduced to 2% for very small size */
-    min-width: 20px; /* Minimum width to keep it legible */
+    max-width: 5%; /* Increased to 5% for a bit bigger size */
+    min-width: 40px; /* Increased minimum width */
     height: auto;
+    margin-bottom: 20px; /* Added space below logo */
     transition: transform 0.5s ease;
     border-radius: 15px; /* Curved edges on all sides */
 }
@@ -314,8 +318,8 @@ footer {
         text-align: left;
     }
     .logo {
-        max-width: 3%; /* Reduced to 3% for mobile */
-        min-width: 15px; /* Reduced minimum width */
+        max-width: 6%; /* Increased to 6% for a bit bigger size on mobile */
+        min-width: 30px; /* Increased minimum width */
         border-radius: 15px; /* Maintain curved edges */
     }
 }
