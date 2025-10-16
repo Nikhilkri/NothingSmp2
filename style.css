@@ -42,7 +42,7 @@ header {
     height: auto;
     margin-bottom: 20px;
     transition: transform 0.5s ease;
-    filter: drop-shadow(2px 2px 2px #FF0000) drop-shadow(-2px -2px 2px #FF0000) drop-shadow(2px -2px 2px #FF0000) drop-shadow(-2px 2px 2px #FF0000); /* Red outline with slight curve */
+    filter: drop-shadow(2px 2px 2px #FF0000) drop-shadow(-2px -2px 2px #FF0000) drop-shadow(2px -2px 2px #FF0000) drop-shadow(-2px 2px 2px #FF0000);
 }
 
 .logo:hover {
@@ -85,7 +85,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: clamp(20px, 4vw, 40px); /* Increased gap to prevent touching */
+    gap: clamp(20px, 4vw, 40px);
     padding: 0;
 }
 
@@ -93,9 +93,9 @@ nav a {
     color: #FF4500;
     text-decoration: none;
     font-weight: 700;
-    font-size: clamp(0.6em, 1vw, 0.8em); /* Reduced font size to fit longer names */
+    font-size: clamp(0.6em, 1vw, 0.8em);
     transition: color 0.3s ease;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap;
 }
 
 nav a:hover {
@@ -119,7 +119,7 @@ h2, h3 {
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 20vw, 250px), 1fr));
-    gap: clamp(15px, 3vw, 25px); /* Increased gap for better spacing */
+    gap: clamp(25px, 5vw, 40px); /* Increased gap to prevent touching */
     justify-items: center;
 }
 
@@ -145,17 +145,24 @@ h2, h3 {
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(clamp(150px, 18vw, 200px), 1fr));
-    gap: clamp(15px, 3vw, 25px); /* Increased gap for better spacing between team cards */
+    gap: clamp(25px, 5vw, 40px); /* Increased gap to prevent touching */
     justify-items: center;
 }
 
 .team-card {
     background: rgba(255, 69, 0, 0.1);
-    padding: clamp(10px, 2vw, 20px);
+    padding: clamp(15px, 3vw, 25px); /* Increased padding to contain names */
     border-radius: 10px;
     transition: transform 0.3s ease;
     max-width: 100%;
-    white-space: nowrap; /* Prevent text wrapping for names */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow if name is too long */
+    text-overflow: ellipsis; /* Add ellipsis if name overflows */
+}
+
+.team-card h3 {
+    font-size: clamp(0.8em, 2vw, 1.2em); /* Adjusted font size for names */
+    margin: 0 0 10px; /* Add spacing below name */
 }
 
 .team-card:hover {
@@ -290,6 +297,8 @@ footer {
     .logo { max-width: 6%; min-width: 25px; }
     .nav ul { gap: clamp(15px, 3.5vw, 30px); }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(150px, 18vw, 200px), 1fr)); }
+    .feature-grid { gap: clamp(20px, 4vw, 35px); }
+    .team-grid { gap: clamp(20px, 4vw, 35px); }
 }
 
 @media (max-width: 768px) {
@@ -298,6 +307,8 @@ footer {
     .typing { font-size: clamp(1em, 3vw, 1.3em); max-width: 85%; }
     .nav ul { gap: clamp(10px, 2.5vw, 20px); flex-wrap: wrap; }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(120px, 15vw, 180px), 1fr)); }
+    .feature-grid { gap: clamp(15px, 3vw, 25px); }
+    .team-grid { gap: clamp(15px, 3vw, 25px); }
     .feature-card, .team-card { padding: clamp(5px, 1.5vw, 10px); }
     .gallery-grid img { min-width: clamp(120px, 15vw, 180px); }
     ul { max-width: 95%; }
@@ -309,6 +320,8 @@ footer {
     .typing { font-size: clamp(0.8em, 2.5vw, 1em); }
     .nav ul { gap: clamp(5px, 1.5vw, 15px); flex-wrap: wrap; }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(100px, 12vw, 150px), 1fr)); }
+    .feature-grid { gap: clamp(10px, 2vw, 20px); }
+    .team-grid { gap: clamp(10px, 2vw, 20px); }
     .feature-card, .team-card { min-height: clamp(150px, 20vw, 180px); }
     .gallery-grid img { min-width: clamp(100px, 12vw, 150px); }
     .join-btn { padding: clamp(8px, 1.5vw, 10px) clamp(15px, 3vw, 20px); }
