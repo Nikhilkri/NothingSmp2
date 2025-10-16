@@ -37,11 +37,12 @@ header {
 }
 
 .logo {
-    max-width: 5%; /* Reduced to 5% for very small size */
-    min-width: 30px; /* Minimum width to keep it legible */
+    max-width: 5%;
+    min-width: 30px;
     height: auto;
     margin-bottom: 20px;
     transition: transform 0.5s ease;
+    filter: drop-shadow(2px 2px 2px #FF0000) drop-shadow(-2px -2px 2px #FF0000) drop-shadow(2px -2px 2px #FF0000) drop-shadow(-2px 2px 2px #FF0000); /* Red outline with slight curve */
 }
 
 .logo:hover {
@@ -84,7 +85,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: clamp(15px, 3vw, 30px); /* Increased gap to prevent touching */
+    gap: clamp(20px, 4vw, 40px); /* Increased gap to prevent touching */
     padding: 0;
 }
 
@@ -92,7 +93,7 @@ nav a {
     color: #FF4500;
     text-decoration: none;
     font-weight: 700;
-    font-size: clamp(0.7em, 1.2vw, 0.9em); /* Reduced font size to fit longer names */
+    font-size: clamp(0.6em, 1vw, 0.8em); /* Reduced font size to fit longer names */
     transition: color 0.3s ease;
     white-space: nowrap; /* Prevent text wrapping */
 }
@@ -118,7 +119,7 @@ h2, h3 {
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 20vw, 250px), 1fr));
-    gap: clamp(10px, 2vw, 20px);
+    gap: clamp(15px, 3vw, 25px); /* Increased gap for better spacing */
     justify-items: center;
 }
 
@@ -144,7 +145,7 @@ h2, h3 {
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(clamp(150px, 18vw, 200px), 1fr));
-    gap: clamp(10px, 2vw, 20px);
+    gap: clamp(15px, 3vw, 25px); /* Increased gap for better spacing between team cards */
     justify-items: center;
 }
 
@@ -154,6 +155,7 @@ h2, h3 {
     border-radius: 10px;
     transition: transform 0.3s ease;
     max-width: 100%;
+    white-space: nowrap; /* Prevent text wrapping for names */
 }
 
 .team-card:hover {
@@ -286,7 +288,7 @@ footer {
 @media (max-width: 1024px) {
     .hero { padding: clamp(50px, 8vw, 100px) clamp(10px, 2vw, 20px) clamp(20px, 4vw, 50px); }
     .logo { max-width: 6%; min-width: 25px; }
-    .nav ul { gap: clamp(10px, 2.5vw, 25px); }
+    .nav ul { gap: clamp(15px, 3.5vw, 30px); }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(150px, 18vw, 200px), 1fr)); }
 }
 
@@ -294,8 +296,7 @@ footer {
     .hero { padding: clamp(30px, 6vw, 50px) clamp(5px, 1.5vw, 10px) clamp(10px, 2vw, 20px); }
     .logo { max-width: 8%; min-width: 20px; }
     .typing { font-size: clamp(1em, 3vw, 1.3em); max-width: 85%; }
-    .nav ul { flex-direction: row; gap: clamp(8px, 2vw, 15px); flex-wrap: wrap; }
-    .section { padding: clamp(20px, 4vw, 40px) clamp(5px, 1vw, 10px); }
+    .nav ul { gap: clamp(10px, 2.5vw, 20px); flex-wrap: wrap; }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(120px, 15vw, 180px), 1fr)); }
     .feature-card, .team-card { padding: clamp(5px, 1.5vw, 10px); }
     .gallery-grid img { min-width: clamp(120px, 15vw, 180px); }
@@ -306,7 +307,7 @@ footer {
     .hero { padding: clamp(20px, 5vw, 30px) clamp(5px, 1vw, 10px) clamp(5px, 1.5vw, 10px); }
     .logo { max-width: 10%; min-width: 15px; }
     .typing { font-size: clamp(0.8em, 2.5vw, 1em); }
-    .nav ul { gap: clamp(5px, 1.5vw, 10px); flex-wrap: wrap; }
+    .nav ul { gap: clamp(5px, 1.5vw, 15px); flex-wrap: wrap; }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(100px, 12vw, 150px), 1fr)); }
     .feature-card, .team-card { min-height: clamp(150px, 20vw, 180px); }
     .gallery-grid img { min-width: clamp(100px, 12vw, 150px); }
