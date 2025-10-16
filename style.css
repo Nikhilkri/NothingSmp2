@@ -10,8 +10,15 @@ body {
 
 @keyframes gradientShift {
     0% { background: linear-gradient(135deg, #000000 0%, #200000 100%); }
-    33% { background: linear-gradient(135deg, #100000 0%, #300000 100%); }
-    66% { background: linear-gradient(135deg, #050000 0%, #400000 100%); }
+    10% { background: linear-gradient(135deg, #080000 0%, #220000 100%); }
+    20% { background: linear-gradient(135deg, #100000 0%, #250000 100%); }
+    30% { background: linear-gradient(135deg, #180000 0%, #280000 100%); }
+    40% { background: linear-gradient(135deg, #200000 0%, #300000 100%); }
+    50% { background: linear-gradient(135deg, #280000 0%, #320000 100%); }
+    60% { background: linear-gradient(135deg, #300000 0%, #350000 100%); }
+    70% { background: linear-gradient(135deg, #380000 0%, #380000 100%); }
+    80% { background: linear-gradient(135deg, #400000 0%, #400000 100%); }
+    90% { background: linear-gradient(135deg, #380000 0%, #350000 100%); }
     100% { background: linear-gradient(135deg, #000000 0%, #200000 100%); }
 }
 
@@ -283,13 +290,13 @@ footer {
         min-width: 180px;
         max-width: 180px;
         min-height: 180px;
-        padding: 10px; /* Reduced padding for smaller size */
+        padding: 10px;
     }
     .team-card {
         min-width: 180px;
         max-width: 180px;
         min-height: 150px;
-        padding: 10px; /* Reduced padding for smaller size */
+        padding: 10px;
     }
     .gallery-grid img {
         min-width: 180px;
