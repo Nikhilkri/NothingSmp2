@@ -42,8 +42,8 @@ header {
     white-space: nowrap;
     overflow: hidden;
     animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-    display: inline-block; /* Ensures full text wraps properly on mobile */
-    max-width: 100%; /* Prevents overflow on small screens */
+    display: inline-block;
+    max-width: 100%;
 }
 
 @keyframes typing {
@@ -86,6 +86,7 @@ nav a:hover {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center; /* Center content in sections */
 }
 
 h2, h3 {
@@ -98,6 +99,7 @@ h2, h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    justify-items: center; /* Center items horizontally */
 }
 
 .feature-card {
@@ -107,6 +109,7 @@ h2, h3 {
     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
     text-align: center;
     transition: transform 0.3s ease;
+    max-width: 300px; /* Limit card width for consistency */
 }
 
 .feature-card:hover {
@@ -122,6 +125,7 @@ h2, h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    justify-items: center; /* Center items horizontally */
 }
 
 .team-card {
@@ -129,10 +133,18 @@ h2, h3 {
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    max-width: 250px; /* Limit card width for consistency */
 }
 
 .team-card:hover {
     transform: translateY(-10px);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto; /* Center the list */
 }
 
 ul li {
@@ -168,6 +180,7 @@ ul li:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
+    justify-items: center; /* Center items horizontally */
 }
 
 .gallery-grid img {
@@ -175,6 +188,7 @@ ul li:hover {
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    max-width: 300px; /* Limit image width for consistency */
 }
 
 .gallery-grid img:hover {
@@ -251,7 +265,15 @@ footer {
     .hero { padding: 50px 10px; }
     nav ul { flex-direction: column; gap: 15px; }
     .typing {
-        font-size: 1.5em; /* Smaller font for mobile to fit */
-        white-space: normal; /* Allow wrapping if needed */
+        font-size: 1.5em;
+        white-space: normal;
+    }
+    .section { padding: 40px 10px; }
+    .feature-grid, .team-grid, .gallery-grid {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        justify-items: center; /* Ensure centering */
+    }
+    .feature-card, .team-card, .gallery-grid img {
+        max-width: 100%; /* Full width on mobile */
     }
 }
