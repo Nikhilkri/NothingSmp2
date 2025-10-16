@@ -45,3 +45,9 @@ function createParticles() {
 }
 
 document.addEventListener('DOMContentLoaded', createParticles);
+
+// Anti-right-click and anti-copy
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('copy', event => event.preventDefault());
+document.addEventListener('cut', event => event.preventDefault());
+document.addEventListener('paste', event => event.preventDefault());
