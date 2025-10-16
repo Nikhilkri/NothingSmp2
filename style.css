@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #FFFFFF 0%, #FFE0E0 100%);
+    background: linear-gradient(135deg, #400000 0%, #300000 100%);
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -9,17 +9,17 @@ body {
 }
 
 @keyframes gradientShift {
-    0% { background: linear-gradient(135deg, #FFFFFF 0%, #FFE0E0 100%); }
-    10% { background: linear-gradient(135deg, #FFF5F5 0%, #FFDCDC 100%); }
-    20% { background: linear-gradient(135deg, #FFF0F0 0%, #FFC8C8 100%); }
-    30% { background: linear-gradient(135deg, #FFEBEB 0%, #FFB4B4 100%); }
-    40% { background: linear-gradient(135deg, #FFE6E6 0%, #FFA0A0 100%); }
-    50% { background: linear-gradient(135deg, #FFE1E1 0%, #FF8C8C 100%); }
-    60% { background: linear-gradient(135deg, #FFEAEA 0%, #FF7878 100%); }
-    70% { background: linear-gradient(135deg, #FFEEEE 0%, #FF6464 100%); }
-    80% { background: linear-gradient(135deg, #FFF2F2 0%, #FF5050 100%); }
-    90% { background: linear-gradient(135deg, #FFF5F5 0%, #FF3C3C 100%); }
-    100% { background: linear-gradient(135deg, #FFFFFF 0%, #FFE0E0 100%); }
+    0% { background: linear-gradient(135deg, #400000 0%, #300000 100%); }
+    10% { background: linear-gradient(135deg, #3D0000 0%, #2D0000 100%); }
+    20% { background: linear-gradient(135deg, #3A0000 0%, #2A0000 100%); }
+    30% { background: linear-gradient(135deg, #370000 0%, #270000 100%); }
+    40% { background: linear-gradient(135deg, #340000 0%, #240000 100%); }
+    50% { background: linear-gradient(135deg, #310000 0%, #210000 100%); }
+    60% { background: linear-gradient(135deg, #2E0000 0%, #1E0000 100%); }
+    70% { background: linear-gradient(135deg, #2B0000 0%, #1B0000 100%); }
+    80% { background: linear-gradient(135deg, #280000 0%, #180000 100%); }
+    90% { background: linear-gradient(135deg, #250000 0%, #150000 100%); }
+    100% { background: linear-gradient(135deg, #400000 0%, #300000 100%); }
 }
 
 header {
