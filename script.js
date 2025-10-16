@@ -34,12 +34,12 @@ function closeLightbox() {
 // Particles generation
 function createParticles() {
     const particlesContainer = document.querySelector('.particles');
-    for (let i = 0; i < 50; i++) { // Adjust number for density
+    for (let i = 0; i < 50; i++) {
         const particle = document.createElement('div');
         particle.classList.add('particle');
         particle.style.left = `${Math.random() * 100}vw`;
         particle.style.animationDelay = `${Math.random() * 5}s`;
-        particle.style.animationDuration = `${5 + Math.random() * 5}s`; // Vary speed
+        particle.style.animationDuration = `${5 + Math.random() * 5}s`;
         particlesContainer.appendChild(particle);
     }
 }
