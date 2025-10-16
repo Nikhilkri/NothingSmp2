@@ -34,11 +34,11 @@ header {
 }
 
 .logo {
-    max-width: 5%; /* Reduced to very small size */
-    min-width: 30px; /* Minimum width to keep it legible */
+    max-width: 2%; /* Reduced to 2% for very small size */
+    min-width: 20px; /* Minimum width to keep it legible */
     height: auto;
     transition: transform 0.5s ease;
-    border-radius: 15px; /* Added curved edges on all sides */
+    border-radius: 15px; /* Curved edges on all sides */
 }
 
 .logo:hover {
@@ -314,8 +314,8 @@ footer {
         text-align: left;
     }
     .logo {
-        max-width: 8%; /* Adjusted for mobile */
-        min-width: 25px;
+        max-width: 3%; /* Reduced to 3% for mobile */
+        min-width: 15px; /* Reduced minimum width */
         border-radius: 15px; /* Maintain curved edges */
     }
-                         }
+}
