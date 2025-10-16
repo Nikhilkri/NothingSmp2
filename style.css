@@ -5,13 +5,14 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    animation: gradientShift 10s ease infinite alternate;
+    animation: gradientShift 10s ease infinite;
 }
 
 @keyframes gradientShift {
     0% { background: linear-gradient(135deg, #000000 0%, #200000 100%); }
-    50% { background: linear-gradient(135deg, #100000 0%, #300000 100%); }
-    100% { background: linear-gradient(135deg, #000000 0%, #400000 100%); }
+    33% { background: linear-gradient(135deg, #100000 0%, #300000 100%); }
+    66% { background: linear-gradient(135deg, #050000 0%, #400000 100%); }
+    100% { background: linear-gradient(135deg, #000000 0%, #200000 100%); }
 }
 
 header {
@@ -86,7 +87,7 @@ nav a:hover {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center; /* Center content in sections */
+    text-align: center;
 }
 
 h2, h3 {
@@ -97,20 +98,20 @@ h2, h3 {
 
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center; /* Center items horizontally */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Smaller cards */
+    gap: 25px; /* Increased gap for space */
+    justify-items: center;
 }
 
 .feature-card {
     background: rgba(255, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
     text-align: center;
     transition: transform 0.3s ease;
-    max-width: 300px; /* Limit card width for consistency */
-    min-height: 200px; /* Consistent height */
+    max-width: 220px; /* Consistent smaller width */
+    min-height: 180px; /* Consistent height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -129,7 +130,7 @@ h2, h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    justify-items: center; /* Center items horizontally */
+    justify-items: center;
 }
 
 .team-card {
@@ -137,8 +138,8 @@ h2, h3 {
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    max-width: 250px; /* Limit card width for consistency */
-    min-height: 150px; /* Consistent height */
+    max-width: 250px;
+    min-height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -152,7 +153,7 @@ ul {
     list-style: none;
     padding: 0;
     max-width: 600px;
-    margin: 0 auto; /* Center the list */
+    margin: 0 auto;
 }
 
 ul li {
@@ -186,9 +187,9 @@ ul li:hover {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    justify-items: center; /* Center items horizontally */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Smaller images */
+    gap: 20px; /* Increased gap for space */
+    justify-items: center;
 }
 
 .gallery-grid img {
@@ -196,8 +197,8 @@ ul li:hover {
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    max-width: 300px; /* Limit image width for consistency */
-    aspect-ratio: 16 / 9; /* Force landscape aspect ratio */
+    max-width: 180px; /* Consistent smaller width */
+    aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 
@@ -280,19 +281,22 @@ footer {
     }
     .section { padding: 40px 10px; }
     .feature-grid, .team-grid, .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller minmax for side-by-side */
-        overflow-x: auto; /* Allow horizontal scrolling if needed */
-        justify-content: flex-start; /* Start from left for horizontal view */
+        grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Two columns for landscape */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        justify-content: flex-start;
         padding: 0 10px;
+        gap: 15px; /* Ensure space between items */
     }
     .feature-card, .team-card {
-        min-width: 200px; /* Fixed min-width for consistency */
+        min-width: 180px; /* Consistent min-width */
+        max-width: 180px; /* Match gallery for uniformity */
     }
     .gallery-grid img {
-        min-width: 250px; /* Wider for landscape feel */
+        min-width: 180px; /* Match feature cards */
+        max-width: 180px;
         aspect-ratio: 16 / 9;
     }
     ul {
-        text-align: left; /* Align rules to left for readability */
+        text-align: left;
     }
-}
+    }
