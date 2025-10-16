@@ -38,12 +38,13 @@ header {
 }
 
 .logo {
-    max-width: 8%; /* Increased to 8% for a little bigger size */
-    min-width: 50px; /* Increased minimum width */
+    max-width: 10%; /* Increased to 10% for a little more size */
+    min-width: 60px; /* Increased minimum width */
     height: auto;
-    margin-bottom: 30px; /* Increased space below logo to separate it from typing */
+    margin-bottom: 30px; /* Space below logo */
     transition: transform 0.5s ease;
     border-radius: 15px; /* Curved edges on all sides */
+    outline: 2px solid #FF0000; /* Added red stroke */
 }
 
 .logo:hover {
@@ -319,8 +320,9 @@ footer {
         text-align: left;
     }
     .logo {
-        max-width: 10%; /* Increased to 10% for a little bigger size on mobile */
-        min-width: 40px; /* Increased minimum width */
+        max-width: 12%; /* Increased to 12% for a little more size on mobile */
+        min-width: 50px; /* Increased minimum width */
         border-radius: 15px; /* Maintain curved edges */
+        outline: 2px solid #FF0000; /* Added red stroke */
     }
 }
