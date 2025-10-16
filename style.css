@@ -34,13 +34,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Ensure vertical centering if needed */
 }
 
 .logo {
-    max-width: 5%; /* Increased to 5% for a bit bigger size */
-    min-width: 40px; /* Increased minimum width */
+    max-width: 8%; /* Increased to 8% for a little bigger size */
+    min-width: 50px; /* Increased minimum width */
     height: auto;
-    margin-bottom: 20px; /* Added space below logo */
+    margin-bottom: 30px; /* Increased space below logo to separate it from typing */
     transition: transform 0.5s ease;
     border-radius: 15px; /* Curved edges on all sides */
 }
@@ -318,8 +319,8 @@ footer {
         text-align: left;
     }
     .logo {
-        max-width: 6%; /* Increased to 6% for a bit bigger size on mobile */
-        min-width: 30px; /* Increased minimum width */
+        max-width: 10%; /* Increased to 10% for a little bigger size on mobile */
+        min-width: 40px; /* Increased minimum width */
         border-radius: 15px; /* Maintain curved edges */
     }
 }
