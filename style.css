@@ -37,8 +37,8 @@ header {
 }
 
 .logo {
-    max-width: 10%; /* Reduced to 10% for very small size */
-    min-width: 50px; /* Minimum width to keep it legible */
+    max-width: 5%; /* Reduced to 5% for very small size */
+    min-width: 30px; /* Minimum width to keep it legible */
     height: auto;
     margin-bottom: 20px;
     transition: transform 0.5s ease;
@@ -84,7 +84,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: clamp(10px, 2vw, 30px);
+    gap: clamp(15px, 3vw, 30px); /* Increased gap to prevent touching */
     padding: 0;
 }
 
@@ -92,8 +92,9 @@ nav a {
     color: #FF4500;
     text-decoration: none;
     font-weight: 700;
-    font-size: clamp(0.8em, 1.5vw, 1em);
+    font-size: clamp(0.7em, 1.2vw, 0.9em); /* Reduced font size to fit longer names */
     transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 nav a:hover {
@@ -284,15 +285,16 @@ footer {
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
     .hero { padding: clamp(50px, 8vw, 100px) clamp(10px, 2vw, 20px) clamp(20px, 4vw, 50px); }
-    .logo { max-width: 12%; min-width: 40px; }
+    .logo { max-width: 6%; min-width: 25px; }
+    .nav ul { gap: clamp(10px, 2.5vw, 25px); }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(150px, 18vw, 200px), 1fr)); }
 }
 
 @media (max-width: 768px) {
     .hero { padding: clamp(30px, 6vw, 50px) clamp(5px, 1.5vw, 10px) clamp(10px, 2vw, 20px); }
-    .logo { max-width: 15%; min-width: 35px; }
+    .logo { max-width: 8%; min-width: 20px; }
     .typing { font-size: clamp(1em, 3vw, 1.3em); max-width: 85%; }
-    .nav ul { flex-direction: row; gap: clamp(5px, 1.5vw, 15px); flex-wrap: wrap; }
+    .nav ul { flex-direction: row; gap: clamp(8px, 2vw, 15px); flex-wrap: wrap; }
     .section { padding: clamp(20px, 4vw, 40px) clamp(5px, 1vw, 10px); }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(120px, 15vw, 180px), 1fr)); }
     .feature-card, .team-card { padding: clamp(5px, 1.5vw, 10px); }
@@ -302,9 +304,9 @@ footer {
 
 @media (max-width: 480px) {
     .hero { padding: clamp(20px, 5vw, 30px) clamp(5px, 1vw, 10px) clamp(5px, 1.5vw, 10px); }
-    .logo { max-width: 20%; min-width: 30px; }
+    .logo { max-width: 10%; min-width: 15px; }
     .typing { font-size: clamp(0.8em, 2.5vw, 1em); }
-    .nav ul { gap: clamp(5px, 1vw, 10px); }
+    .nav ul { gap: clamp(5px, 1.5vw, 10px); flex-wrap: wrap; }
     .feature-grid, .team-grid, .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(clamp(100px, 12vw, 150px), 1fr)); }
     .feature-card, .team-card { min-height: clamp(150px, 20vw, 180px); }
     .gallery-grid img { min-width: clamp(100px, 12vw, 150px); }
